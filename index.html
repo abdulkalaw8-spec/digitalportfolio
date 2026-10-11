@@ -1,12 +1,13 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1711">
-  <meta name="description" content="Abdul Cedick K. Kalaw — IT Student, Web Designer and Creative Developer.">
-  <title>Abdul Cedick K. Kalaw | Creative Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09140e">
+  <meta name="description" content="Abdul Cedick K. Kalaw — Web Designer and Creative Developer. Explore my portfolio, skills, and projects.">
+  <title>Abdul Cedick K. Kalaw | Portfolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,327 +15,358 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="progress" id="progress"></div>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+  <div id="progress" aria-hidden="true"></div>
 
-  <header class="nav" id="navbar">
-    <div class="container navin">
-      <a class="brand" href="#top" aria-label="Home">A<span>C</span><b>.</b></a>
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="#home" aria-label="Abdul Kalaw home">
+        <span class="brand-mark">AK<span>.</span></span>
+        <span class="brand-copy">
+          <strong>ABDUL KALAW</strong>
+          <small>PORTFOLIO / 2026</small>
+        </span>
+      </a>
 
-      <nav class="links" id="navLinks" aria-label="Main navigation">
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#services">Capabilities</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-contact">Contact <span>↗</span></a>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch theme">☼</button>
       </nav>
-
-      <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme" title="Switch theme">☼</button>
-        <button class="menu" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      </div>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container heroGrid">
-        <div class="hero-content">
-          <span class="badge reveal">
-            <i class="status-dot"></i>
-            Open to learning opportunities
-          </span>
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy reveal-on-scroll">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR LEARNING & OPPORTUNITIES</p>
+        <h1>Designing ideas<br>into <span class="gradient-text">digital</span><br><span class="outline-text">experiences.</span></h1>
+        <p class="hero-description">
+          Hi, I'm <strong>Abdul Cedick K. Kalaw</strong> — an aspiring web designer and creative developer passionate about building meaningful, user-friendly digital experiences.
+        </p>
 
-          <div class="eyebrow reveal delay-1">INFORMATION TECHNOLOGY · BSIT</div>
-
-          <h1 class="reveal delay-1">
-            ABDUL CEDICK
-            <span class="accent">K. KALAW<span class="period">.</span></span>
-          </h1>
-
-          <div class="role-line reveal delay-2">
-            <span class="role-prefix">I'm exploring</span>
-            <span id="typed" class="typed">Web Development</span><span class="caret"></span>
-          </div>
-
-          <p class="copy reveal delay-2">
-            An IT student passionate about creating modern websites,
-            exploring technology, and solving technical problems through
-            practical and creative solutions.
-          </p>
-
-          <div class="actions reveal delay-3">
-            <a class="btn primary" href="#projects">Explore My Work <span>↗</span></a>
-            <a class="btn secondary" href="#contact">Let's Connect <span>→</span></a>
-          </div>
-
-          <div class="hero-meta reveal delay-3">
-            <span><i></i> Always learning</span>
-            <span class="meta-divider"></span>
-            <span>Based in the Philippines</span>
-          </div>
+        <div class="typing-line">
+          <span class="typing-prefix">I EXPLORE</span>
+          <span id="typed">Web Development</span><span class="typing-cursor">|</span>
         </div>
 
-        <div class="visual reveal delay-2" id="portraitVisual">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="visual-back"></div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="button button-secondary" href="#contact">Let's connect <span>→</span></a>
+        </div>
 
-          <div class="frame">
-            <div class="frame-grid"></div>
-            <div class="portrait-glow"></div>
-            <img class="portrait" src="profile.png" alt="Portrait of Abdul Cedick K. Kalaw" width="900" height="838">
-            <div class="portrait-label">
-              <span class="label-icon">✳</span>
-              <span><b>ABDUL CEDICK K. KALAW</b><small>IT STUDENT · CREATIVE MIND</small></span>
+        <div class="hero-meta">
+          <span><span class="meta-symbol">✳</span> Based in the Philippines</span>
+          <span class="meta-divider"></span>
+          <span>BSIT Student</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-on-scroll" id="portraitVisual">
+        <div class="visual-grid" aria-hidden="true"></div>
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="portrait-card">
+          <div class="portrait-topline">
+            <span>CREATIVE DEVELOPER</span>
+            <span class="live-indicator">● ONLINE</span>
+          </div>
+          <div class="portrait-frame frame">
+            <img class="portrait" src="profile.png" alt="Portrait of Abdul Cedick K. Kalaw">
+            <div class="portrait-fallback" id="portraitFallback" hidden>AK</div>
+            <div class="portrait-overlay"></div>
+            <span class="portrait-coordinate">8° N / PH</span>
+          </div>
+          <div class="portrait-caption">
+            <div>
+              <span class="caption-label">THE CREATOR</span>
+              <h2>Abdul Kalaw<span>.</span></h2>
             </div>
+            <span class="signature-mark">AK</span>
           </div>
-
-          <div class="floating-card float-card-one">
-            <span class="float-icon">✦</span>
-            <span><b>Creative</b><small>By design</small></span>
-          </div>
-          <div class="floating-card float-card-two">
-            <span class="live-dot"></span>
-            <span><b>Growing daily</b><small>Learning in progress</small></span>
-          </div>
-          <span class="decor decor-one">✳</span>
-          <span class="decor decor-two">+</span>
         </div>
-      </div>
-
-      <div class="hero-bottom container">
-        <span>SCROLL TO EXPLORE</span>
-        <div class="scroll-line"><span></span></div>
-        <span class="hero-index">01 / 06</span>
+        <div class="float-card float-card-top">
+          <span class="float-icon">✳</span>
+          <div><strong>Creative Mindset</strong><small>Ideas into interfaces</small></div>
+        </div>
+        <div class="float-card float-card-bottom">
+          <span class="float-icon gold-icon">⌘</span>
+          <div><strong>Always Learning</strong><small>Building every day</small></div>
+        </div>
+        <span class="visual-index">01 — INTRODUCTION</span>
       </div>
     </section>
 
-    <section class="page" id="about">
-      <div class="container">
-        <div class="section-head reveal-on-scroll">
-          <div>
-            <div class="eyebrow">01 — ABOUT ME</div>
-            <h2>Curiosity into <span class="accent">creation.</span></h2>
-          </div>
-          <p>A little about who I am, what interests me, and where I want to go.</p>
+    <div class="ticker" aria-label="Areas of interest">
+      <div class="ticker-track">
+        <span>WEB DESIGN</span><i>✳</i><span>CREATIVE DEVELOPMENT</span><i>✳</i><span>USER EXPERIENCE</span><i>✳</i><span>MARANAO CULTURE</span><i>✳</i>
+        <span>WEB DESIGN</span><i>✳</i><span>CREATIVE DEVELOPMENT</span><i>✳</i><span>USER EXPERIENCE</span><i>✳</i><span>MARANAO CULTURE</span><i>✳</i>
+      </div>
+    </div>
+
+    <section class="section-shell section-block" id="about">
+      <div class="section-heading reveal-on-scroll">
+        <p class="eyebrow">01 — ABOUT ME</p>
+        <h2>Curiosity drives me.<br><span class="muted-heading">Purpose guides my work.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-lead reveal-on-scroll">
+          <span class="large-quote">“</span>
+          <p>I believe technology becomes powerful when it is designed around real people, real needs, and meaningful ideas.</p>
         </div>
+        <div class="about-detail reveal-on-scroll">
+          <p>I'm an Information Technology student developing my skills in web design, front-end development, and digital problem-solving. I enjoy turning concepts into clean interfaces and exploring how technology can support education and communities.</p>
+          <p>My interest in Maranao culture also inspires me to explore digital projects that celebrate heritage, creativity, and learning.</p>
+          <a href="#contact" class="text-link">Get to know me <span>↗</span></a>
+        </div>
+      </div>
+      <div class="stats-grid reveal-on-scroll">
+        <div class="stat-card"><span class="stat-number">01</span><span class="stat-label">Curious learner</span></div>
+        <div class="stat-card"><span class="stat-number">02</span><span class="stat-label">Creative thinker</span></div>
+        <div class="stat-card"><span class="stat-number">03</span><span class="stat-label">Purpose-driven</span></div>
+        <div class="stat-card"><span class="stat-number">04</span><span class="stat-label">Always improving</span></div>
+      </div>
+    </section>
 
-        <div class="grid two">
-          <article class="card reveal-on-scroll spotlight">
-            <span class="card-icon">✳</span>
-            <div class="num">THE PERSON</div>
-            <h3>Learning by building.</h3>
-            <p>
-              I'm a Bachelor of Science in Information Technology student
-              interested in web development, technical support, troubleshooting,
-              and discovering how technology works.
-            </p>
-            <p>
-              I believe that consistent practice, curiosity, and a willingness
-              to learn are important steps toward becoming a better IT professional.
-            </p>
-          </article>
+    <section class="section-shell section-block" id="services">
+      <div class="section-heading reveal-on-scroll">
+        <p class="eyebrow">02 — CAPABILITIES</p>
+        <h2>What I bring<br><span class="muted-heading">to the table.</span></h2>
+        <p class="section-intro">The areas I'm exploring and developing through practice, coursework, and personal projects.</p>
+      </div>
+      <div class="grid three">
+        <article class="feature-card reveal-on-scroll">
+          <span class="card-index">01 / DESIGN</span>
+          <div class="feature-icon">◈</div>
+          <h3>Web Design</h3>
+          <p>Creating organized, responsive layouts with thoughtful spacing, visual hierarchy, and consistent styling.</p>
+          <span class="card-foot">LAYOUT · VISUAL DESIGN</span>
+        </article>
+        <article class="feature-card reveal-on-scroll">
+          <span class="card-index">02 / DEVELOPMENT</span>
+          <div class="feature-icon">⌘</div>
+          <h3>Front-End Development</h3>
+          <p>Building web interfaces with HTML, CSS, and JavaScript, with a focus on usability and responsive behavior.</p>
+          <span class="card-foot">HTML · CSS · JAVASCRIPT</span>
+        </article>
+        <article class="feature-card reveal-on-scroll">
+          <span class="card-index">03 / PROBLEM SOLVING</span>
+          <div class="feature-icon">✳</div>
+          <h3>Digital Solutions</h3>
+          <p>Exploring practical technology concepts for education, cultural learning, and everyday organizational needs.</p>
+          <span class="card-foot">RESEARCH · ITERATION</span>
+        </article>
+      </div>
+    </section>
 
-          <article class="card reveal-on-scroll spotlight">
-            <span class="card-icon">⌘</span>
-            <div class="num">THE DIRECTION</div>
-            <h3>Small steps. Bigger ideas.</h3>
-            <p>
-              This portfolio documents my progress as I learn, experiment,
-              and work on personal projects. My goal is to turn what I learn
-              into useful, thoughtful digital experiences.
-            </p>
-            <div class="tags">
-              <span class="tag">Web Development</span>
-              <span class="tag">IT Support</span>
-              <span class="tag">Creative Thinking</span>
+    <section class="section-shell section-block" id="skills">
+      <div class="section-heading reveal-on-scroll">
+        <p class="eyebrow">03 — SKILLS & TOOLS</p>
+        <h2>Learning the craft.<br><span class="muted-heading">One step at a time.</span></h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-panel reveal-on-scroll">
+          <div class="panel-heading"><h3>Development skills</h3><span class="panel-tag">IN PROGRESS</span></div>
+          <div class="skill-item">
+            <div class="skill-label"><span>HTML</span><span>65%</span></div>
+            <div class="skill-track"><span class="skill-fill" data-width="65%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>CSS & Responsive Design</span><span>55%</span></div>
+            <div class="skill-track"><span class="skill-fill" data-width="55%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>JavaScript</span><span>35%</span></div>
+            <div class="skill-track"><span class="skill-fill" data-width="35%"></span></div>
+          </div>
+          <p class="skills-note">These percentages are personal learning estimates, not formal assessments.</p>
+        </div>
+        <div class="tools-panel reveal-on-scroll">
+          <div class="panel-heading"><h3>Tools & interests</h3><span class="panel-tag">EXPLORING</span></div>
+          <div class="tag-cloud">
+            <span>VS Code</span><span>Git & GitHub</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>Responsive UI</span><span>UI/UX</span><span>AI Concepts</span><span>Web Accessibility</span><span>Digital Culture</span>
+          </div>
+          <div class="tools-note"><span class="note-icon">✳</span><p>My goal is to keep learning, practice consistently, and turn new knowledge into useful projects.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell section-block" id="projects">
+      <div class="section-heading project-heading reveal-on-scroll">
+        <div>
+          <p class="eyebrow">04 — SELECTED PROJECTS</p>
+          <h2>Ideas made<br><span class="muted-heading">visible.</span></h2>
+        </div>
+        <p class="section-intro">A selection of personal work and project concepts that reflect my learning journey and interests.</p>
+      </div>
+
+      <div class="grid project-grid">
+        <article class="project-card reveal-on-scroll">
+          <div class="project-art art-one">
+            <div class="mock-browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span>abdulkalaw / portfolio</span></div>
+              <div class="browser-content">
+                <span class="mock-small">DESIGN / DEVELOP / CREATE</span>
+                <div class="mock-title">Hello,<br><b>I'm Abdul.</b></div>
+                <div class="mock-lines"><i></i><i></i><i></i></div>
+                <div class="mock-button">EXPLORE WORK ↗</div>
+              </div>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="page" id="services">
-      <div class="container">
-        <div class="section-head reveal-on-scroll">
-          <div>
-            <div class="eyebrow">02 — CAPABILITIES]</div>
-            <h2>Things I love <span class="accent">exploring.</span></h2>
+            <span class="art-label">01 — PERSONAL BRAND</span>
           </div>
-          <p>My current areas of interest and learning—not claims of professional services.</p>
-        </div>
-
-        <div class="grid two">
-          <article class="card service-card reveal-on-scroll spotlight">
-            <div class="service-top"><span class="service-icon">⌘</span><span class="num">01 / 04</span></div>
-            <h3>Web Development</h3>
-            <p>Exploring how to build responsive, accessible, and visually engaging websites.</p>
-            <span class="card-arrow">↗</span>
-          </article>
-
-          <article class="card service-card reveal-on-scroll spotlight">
-            <div class="service-top"><span class="service-icon">⌁</span><span class="num">02 / 04</span></div>
-            <h3>IT Support</h3>
-            <p>Learning to diagnose everyday computer, software, and connectivity problems.</p>
-            <span class="card-arrow">↗</span>
-          </article>
-
-          <article class="card service-card reveal-on-scroll spotlight">
-            <div class="service-top"><span class="service-icon">⌬</span><span class="num">03 / 04</span></div>
-            <h3>Troubleshooting</h3>
-            <p>Understanding technical issues through logical thinking and practical testing.</p>
-            <span class="card-arrow">↗</span>
-          </article>
-
-          <article class="card service-card reveal-on-scroll spotlight">
-            <div class="service-top"><span class="service-icon">✳</span><span class="num">04 / 04</span></div>
-            <h3>Website Maintenance</h3>
-            <p>Practicing how to improve, organize, update, and maintain website projects.</p>
-            <span class="card-arrow">↗</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="page" id="skills">
-      <div class="container">
-        <div class="section-head reveal-on-scroll">
-          <div>
-            <div class="eyebrow">03 — SKILLS & TOOLS</div>
-            <h2>Building my <span class="accent">toolkit.</span></h2>
-          </div>
-          <p>Update these skills to match the technologies you have actually practiced.</p>
-        </div>
-
-        <div class="grid two">
-          <article class="card reveal-on-scroll">
-            <div class="skill-heading"><span class="service-icon">⌘</span><h3>Web Technologies</h3></div>
-            <div class="skill-row"><div><span>HTML</span><span>Learning</span></div><div class="skill-track"><span data-width="65%"></span></div></div>
-            <div class="skill-row"><div><span>CSS</span><span>Learning</span></div><div class="skill-track"><span data-width="55%"></span></div></div>
-            <div class="skill-row"><div><span>JavaScript</span><span>Learning</span></div><div class="skill-track"><span data-width="35%"></span></div></div>
-          </article>
-
-          <article class="card reveal-on-scroll">
-            <div class="skill-heading"><span class="service-icon">⌬</span><h3>IT & Workflow</h3></div>
-            <div class="tags">
-              <span class="tag">Computer Troubleshooting</span>
-              <span class="tag">IT Fundamentals</span>
-              <span class="tag">VS Code</span>
-              <span class="tag">Git & GitHub</span>
-              <span class="tag">Problem Solving</span>
-            </div>
-            <p class="skill-note">Keep only the skills and tools you can comfortably discuss or demonstrate.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="page" id="projects">
-      <div class="container">
-        <div class="section-head reveal-on-scroll">
-          <div>
-            <div class="eyebrow">04 — SELECTED WORK</div>
-            <h2>Ideas in <span class="accent">progress.</span></h2>
-          </div>
-          <p>A place for real projects as you complete them. Replace the examples below with your work.</p>
-        </div>
-
-        <div class="grid three">
-          <article class="card project-card reveal-on-scroll spotlight">
-            <div class="project-art art-one"><span>01</span><b>&lt;/&gt;</b><i>HTML · CSS</i></div>
-            <div class="num">WEB DESIGN</div>
+          <div class="project-body">
+            <div class="project-meta"><span>WEB DEVELOPMENT</span><span>01 / 04</span></div>
             <h3>Personal Portfolio</h3>
-            <p>A personal website showcasing my background, interests, and development journey.</p>
-            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
-          </article>
+            <p>A responsive portfolio presenting my background, developing skills, creative interests, and projects in a distinctive green-and-gold visual style.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+            <a class="project-link" href="https://github.com/abdulkalaw8-spec/digitalportfolio" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </div>
+        </article>
 
-          <article class="card project-card reveal-on-scroll spotlight">
-            <div class="project-art art-two"><span>02</span><b>✳</b><i>LEARN · CREATE</i></div>
-            <div class="num">CULTURE & TECHNOLOGY</div>
+        <article class="project-card reveal-on-scroll">
+          <div class="project-art art-two">
+            <div class="maranaw-art">
+              <div class="okir-ring">✳</div>
+              <span class="maranaw-kicker">CULTURE · LANGUAGE · HERITAGE</span>
+              <strong>Maranaw<span>AI</span></strong>
+              <span class="maranaw-subtitle">Discover. Learn. Preserve.</span>
+              <div class="maranaw-line"></div>
+            </div>
+            <span class="art-label">02 — CULTURAL LEARNING</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>AI / EDUCATION</span><span>02 / 04</span></div>
             <h3>MaranawAI</h3>
-            <p>An educational concept for learning about Maranao culture, history, language, arts, and traditions.</p>
-            <div class="tags"><span class="tag">Education</span><span class="tag">AI Concept</span></div>
-          </article>
+            <p>An AI-powered learning platform concept focused on Maranao culture, history, language, arts, traditions, Okir, and Torogan, designed to encourage respectful cultural learning.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>OpenAI API</span></div>
+            <span class="project-status"><i></i> IN DEVELOPMENT</span>
+          </div>
+        </article>
 
-          <article class="card project-card reveal-on-scroll spotlight">
-            <div class="project-art art-three"><span>03</span><b>⌘</b><i>BUILD · IMPROVE</i></div>
-            <div class="num">FUTURE PROJECT</div>
-            <h3>Project Showcase</h3>
-            <p>Replace this sample with another real website, application, or school project when ready.</p>
-            <div class="tags"><span class="tag">Your technology</span></div>
-          </article>
+        <article class="project-card reveal-on-scroll">
+          <div class="project-art art-three">
+            <div class="edutech-art">
+              <div class="edu-phone">
+                <div class="edu-notch"></div>
+                <span class="edu-greeting">HELLO, LEARNER</span>
+                <strong>Learn<br>something<br><em>new.</em></strong>
+                <div class="edu-progress"><span></span></div>
+                <div class="edu-mini-row"><i>✎</i><i>▤</i><i>✓</i></div>
+              </div>
+              <div class="edu-bubble bubble-one">LEARN</div>
+              <div class="edu-bubble bubble-two">GROW ✳</div>
+            </div>
+            <span class="art-label">03 — LEARNING EXPERIENCE</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>EDUCATION / MOBILE</span><span>03 / 04</span></div>
+            <h3>EduTech Mobile</h3>
+            <p>An educational mobile app concept focused on making learning content easier to navigate, helping learners access topics and track their learning journey.</p>
+            <div class="project-tags"><span>Academic Project</span><span>Education</span><span>UI/UX Concept</span></div>
+            <span class="project-status concept-status"><i></i> CONCEPT / PROJECT IDEA</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal-on-scroll">
+          <div class="project-art art-four">
+            <div class="water-art">
+              <div class="water-drop">◉</div>
+              <div class="water-dashboard">
+                <span class="water-kicker">STATION OVERVIEW</span>
+                <strong>Water Station</strong>
+                <div class="water-stats"><span>ORDERS <b>↗</b></span><span>STOCK <b>✓</b></span></div>
+                <div class="water-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <span class="water-footer">MANAGEMENT / OPERATIONS</span>
+              </div>
+            </div>
+            <span class="art-label">04 — BUSINESS SOLUTIONS</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>BUSINESS / SYSTEM DESIGN</span><span>04 / 04</span></div>
+            <h3>Water Refilling Station Management System</h3>
+            <p>A management system concept for organizing customer orders, delivery records, inventory, and daily station operations in one place.</p>
+            <div class="project-tags"><span>Academic Project</span><span>Business Management</span><span>System Design</span></div>
+            <span class="project-status concept-status"><i></i> CONCEPT / PROJECT IDEA</span>
+          </div>
+        </article>
+      </div>
+      <p class="projects-disclaimer">Project descriptions marked as concepts represent proposed ideas. Update the details and technology tags as each project is implemented.</p>
+    </section>
+
+    <section class="section-shell section-block" id="education">
+      <div class="section-heading reveal-on-scroll">
+        <p class="eyebrow">05 — EDUCATION</p>
+        <h2>Building a foundation<br><span class="muted-heading">for what's next.</span></h2>
+      </div>
+      <div class="timeline reveal-on-scroll">
+        <div class="timeline-marker"><span></span></div>
+        <div class="timeline-date">2023 — 2027 <span>EXPECTED</span></div>
+        <div class="timeline-content">
+          <span class="timeline-label">UNDERGRADUATE EDUCATION</span>
+          <h3>Bachelor of Science in Information Technology</h3>
+          <p class="school-name">Torres Capitol College Inc.</p>
+          <p>Developing a foundation in information technology while building practical skills through coursework, self-directed learning, and personal projects.</p>
         </div>
-        <p class="section-note reveal-on-scroll">Note: These cards are examples. Update their descriptions and links to accurately represent completed work.</p>
       </div>
     </section>
 
-    <section class="page" id="education">
-      <div class="container">
-        <div class="section-head reveal-on-scroll">
-          <div>
-            <div class="eyebrow">05 — EDUCATION</div>
-            <h2>The learning <span class="accent">journey.</span></h2>
-          </div>
+    <section class="section-shell section-block contact-section" id="contact">
+      <div class="contact-panel reveal-on-scroll">
+        <div class="contact-decoration" aria-hidden="true">✳</div>
+        <p class="eyebrow">06 — CONTACT</p>
+        <h2>Have an idea?<br><span class="gradient-text">Let's build something.</span></h2>
+        <p class="contact-description">I'm open to learning opportunities, collaboration, and conversations about web design, technology, and creative projects.</p>
+        <div class="contact-actions">
+          <!-- Replace this placeholder email with your real email address. -->
+          <a class="button button-primary" href="mailto:your-email@example.com">Email me <span>↗</span></a>
+          <a class="button button-secondary" href="https://github.com/abdulkalaw8-spec" target="_blank" rel="noopener noreferrer">GitHub profile <span>↗</span></a>
         </div>
-
-        <div class="timeline">
-          <article class="timeline-item reveal-on-scroll">
-            <span class="timeline-dot"></span>
-            <span class="date">2023 — 2027 · EXPECTED</span>
-            <h3>Torres Capitol College Inc.</h3>
-            <p>Bachelor of Science in Information Technology</p>
-            <span class="timeline-caption">Academic journey · Information Technology</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="page" id="contact">
-      <div class="container">
-        <div class="contact reveal-on-scroll">
-          <div class="contact-orb"></div>
-          <div class="eyebrow">06 — GET IN TOUCH</div>
-          <h2>Let's build something <span class="accent">meaningful.</span></h2>
-          <p>
-            I'm interested in learning, collaborating on projects, and exploring
-            opportunities that help me grow in technology.
-          </p>
-          <div class="actions">
-            <a class="btn primary" href="mailto:your-email@example.com">Send Me an Email ↗</a>
-            <a class="btn secondary" href="https://github.com/abdulkalaw8-spec" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
-          </div>
-          <p class="contact-note">Replace the sample email address with your real email before publishing.</p>
-        </div>
+        <p class="email-reminder">Remember to replace <code>your-email@example.com</code> with your real email.</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container foot">
-      <a class="brand footer-brand" href="#top">A<span>C</span><b>.</b></a>
-      <span>© <span id="year"></span> Abdul Cedick K. Kalaw</span>
-      <a href="#top" class="back-top">Back to top ↑</a>
+    <div class="footer-inner">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark">AK<span>.</span></span>
+        <span class="brand-copy"><strong>ABDUL KALAW</strong><small>MADE WITH PURPOSE</small></span>
+      </a>
+      <p>Designed with curiosity <span>✳</span> Built with intention.</p>
+      <span class="footer-copy">© <span id="year">2026</span> ABDUL CEDICK K. KALAW</span>
     </div>
   </footer>
 
-  <button class="chat-btn" id="chatToggle" aria-label="Open portfolio assistant" aria-expanded="false">✳</button>
-  <section class="chat" id="portfolioChat" role="dialog" aria-label="Portfolio assistant" aria-hidden="true">
-    <div class="chat-head">
-      <span><i class="status-dot"></i> <b>Portfolio Assistant</b></span>
-      <button class="chat-x" id="chatClose" aria-label="Close assistant">×</button>
+  <button id="chatToggle" class="chat-toggle" type="button" aria-label="Open portfolio assistant" aria-expanded="false">
+    <span class="chat-toggle-icon">✳</span><span>Ask about me</span>
+  </button>
+
+  <aside class="portfolio-chat" id="portfolioChat" aria-label="Portfolio FAQ assistant" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-avatar">AK</div>
+      <div class="chat-heading"><strong>Portfolio Assistant</strong><span><i></i> Quick information</span></div>
+      <button id="chatClose" class="chat-close" type="button" aria-label="Close assistant">×</button>
     </div>
     <div class="chat-log" id="chatLog" aria-live="polite">
-      <p class="bot">Hi! I'm a portfolio FAQ assistant. Choose a topic below to learn more.</p>
+      <div class="chat-message assistant-message">Hi! 👋 Ask me about Abdul's skills, projects, education, or contact information.</div>
     </div>
-    <div class="chat-q">
-      <button data-question="What does Abdul do?">What does he do?</button>
-      <button data-question="What skills are listed?">Skills</button>
-      <button data-question="Where did Abdul study?">Education</button>
-      <button data-question="How can I contact Abdul?">Contact</button>
+    <div class="chat-questions">
+      <button type="button" data-question="What does Abdul do?">What does Abdul do?</button>
+      <button type="button" data-question="What skills are listed?">Skills</button>
+      <button type="button" data-question="Where did Abdul study?">Education</button>
+      <button type="button" data-question="How can I contact Abdul?">Contact</button>
     </div>
-  </section>
+    <p class="chat-disclaimer">This is a local portfolio FAQ, not a live AI chatbot.</p>
+  </aside>
 </body>
 </html>
